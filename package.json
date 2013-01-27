@@ -1,0 +1,27 @@
+{
+  "name": "lut",
+  "version": "0.0.1",
+  "description": "Render RGB lookup tables to a canvas",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "node_modules/.bin/browserify demo.js -o bundle.js"
+  },
+  "keywords": [
+    "canvas",
+    "rgb",
+    "lookup",
+    "table",
+    "colour",
+    "grading",
+    "graphics"
+  ],
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/lut.git"
+  },
+  "devDependencies": {
+    "browserify": "~1.17.2"
+  }
+}
