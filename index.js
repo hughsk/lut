@@ -28,8 +28,6 @@ function lut(red, green, blue, canvas) {
 
   ctx.putImageData(data, 0, 0)
 
-  console.log(data)
-
   return canvas
 };
 
