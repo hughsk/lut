@@ -16,11 +16,11 @@ function lut(red, green, blue, canvas) {
   for (r = 0; r < red; r += 1) {
     for (g = 0; g < green; g += 1) {
       for (b = 0; b < blue; b += 1) {
-        x = r + g * red
-        y = b
-        data.data[(x + y * width)*4    ] = 255 * (r+1) / red
-        data.data[(x + y * width)*4 + 1] = 255 * (g+1) / green
-        data.data[(x + y * width)*4 + 2] = 255 * (b+1) / blue
+        x = r + b * red
+        y = green - g
+        data.data[(x + y * width)*4    ] = 255 * (r+0.5) / red
+        data.data[(x + y * width)*4 + 1] = 255 * (g+0.5) / green
+        data.data[(x + y * width)*4 + 2] = 255 * (b+0.5) / blue
         data.data[(x + y * width)*4 + 3] = 255 // Alpha Channel
       }
     }
