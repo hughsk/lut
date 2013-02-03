@@ -1,6 +1,6 @@
 {
   "name": "lut",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Render RGB lookup tables to a canvas",
   "main": "index.js",
   "scripts": {
