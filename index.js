@@ -3,14 +3,14 @@ function lut(red, green, blue, canvas) {
 
   if (!canvas) {
     canvas = document.createElement('canvas')
-    canvas.width = red * green
-    canvas.height = blue
+    canvas.width = red * blue
+    canvas.height = green
   }
 
   var r, g, b, x, y
   var ctx = canvas.getContext('2d')
-    , width = red * green
-    , height = blue
+    , width = red * blue
+    , height = green
     , data = ctx.getImageData(0, 0, width, height)
 
   for (r = 0; r < red; r += 1) {
