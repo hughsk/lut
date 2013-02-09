@@ -17,7 +17,7 @@ function lut(red, green, blue, canvas) {
     for (g = 0; g < green; g += 1) {
       for (b = 0; b < blue; b += 1) {
         x = r + b * red
-        y = green - g
+        y = green - g - 1
         data.data[(x + y * width)*4    ] = 255 * (r+0.5) / red
         data.data[(x + y * width)*4 + 1] = 255 * (g+0.5) / green
         data.data[(x + y * width)*4 + 2] = 255 * (b+0.5) / blue
